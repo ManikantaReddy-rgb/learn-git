@@ -36,10 +36,16 @@ if((quantity1<=0)or(quantity2<=0)or(quantity3<=0)):
     print("please enter a positive value")
 else:
     totalamount=Product1*quantity1 +Product2*quantity2+Product3*quantity3
+    x = open("mydata.txt", "a")
+    print("the quantity and cost of products is:")
+    print("the quantity and cost of products is:",file=x)
+    # x.close()
     entries = { quantity1 : 40,quantity2 : 50,quantity3 : 60}
     for i,p in entries.items():
         print(i,p)
-    print("the amount that you need to pay is: ", totalamount)
+        print(i,p, file=x)
+print("the amount that you need to pay is: ", totalamount)
+print("the amount that you need to pay is: ", totalamount, file=x)
 
 
 
