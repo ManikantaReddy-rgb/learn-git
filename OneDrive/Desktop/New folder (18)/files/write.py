@@ -1,0 +1,5 @@
+data = open("data.txt","w")
+data.write("i am adding few lines")
+# data.write("i am adding first line")
+# data.write("i am adding second line")
+data.close()
